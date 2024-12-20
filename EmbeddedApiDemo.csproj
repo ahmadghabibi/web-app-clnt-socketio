@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\ServiceDependencies\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <Target Name="MyPublishScripts" BeforeTargets="beforepublish">
+    <Exec Command="npm i" />
+    <Exec Command="npm i" WorkingDirectory=".\\embedded-clnt-app" />
+    <Exec Command="npm run build" WorkingDirectory=".\\embedded-clnt-app" />
+    <Exec Command="gulp" />
+    
+    
+  </Target>
+</Project>
