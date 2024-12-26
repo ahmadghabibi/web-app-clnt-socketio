@@ -30,7 +30,7 @@ function App() {
     }
 
   const connectToSocket = () => {
-    console.log('connection')
+    
     const socket = clnt("https://socket-relay-service.webpubsub.azure.com", {path: "/clients/socketio/hubs/Hub"});
     setSocket(socket)
   }
@@ -47,7 +47,7 @@ function App() {
       <label>Response from Lunchpad</label>
       <input type='text' value={lunchpadRes}  className='form-control'/>
       <div>
-        <button className='btn btn-success m-4' onClick={connectToSocket}>Connect to socket server</button> 
+        <button className='btn btn-success m-4' onClick={connectToSocket}>Connect to socket server using Azure relay bus</button> 
       </div>
       <div>
         <button className='btn btn-success m-4' onClick={sendMsg}>Send Message </button> 
