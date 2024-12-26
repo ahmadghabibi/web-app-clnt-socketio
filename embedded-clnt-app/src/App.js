@@ -37,7 +37,7 @@ function App() {
   
   return (
     <div className="App">
-         <h1>Commands to send to Lunchpad using simple socket protocal</h1>
+         <h1>Commands to send to lunchpad using web socket protocal</h1>
          
          <div className="row">
             <div className="col-md-4"></div>
