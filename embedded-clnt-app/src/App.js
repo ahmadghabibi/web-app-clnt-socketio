@@ -47,7 +47,7 @@ function App() {
       <label>Response from Lunchpad</label>
       <input type='text' value={lunchpadRes}  className='form-control'/>
       <div>
-        <button className='btn btn-success m-4' onClick={connectToSocket}>Connect to socket server using Azure relay bus</button> 
+        <button className='btn btn-success m-4' onClick={connectToSocket}>Connect to socket server using Azure relay bus pub/sub</button> 
       </div>
       <div>
         <button className='btn btn-success m-4' onClick={sendMsg}>Send Message </button> 
