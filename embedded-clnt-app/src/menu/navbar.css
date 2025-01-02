@@ -1,0 +1,14 @@
+.theMenu  ul li::after{
+
+    content: " | ";
+    color:coral;
+    
+}
+
+.theMenu ul li:last-of-type::after{
+    content: " ";
+}
+
+.active {
+    background-color: orange;
+}
