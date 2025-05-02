@@ -16,18 +16,18 @@ namespace EmbeddedApiDemo.Controllers
         public IActionResult Get()
         {
 
-            var commands = new List<CmdList>()
+            var commands = new List<EmbeddedCmds>()
             {
-                new CmdList { label="Y", value=1 },
-                new CmdList { label="y" ,value=2},
-                new CmdList { label="V" ,value=3},
-                new CmdList { label="v" ,value=4},
-                new CmdList { label="R" ,value=5},
-                new CmdList { label="r" ,value=6},
-                new CmdList { label="G" ,value=7},
-                new CmdList { label="g" ,value=8},
-                new CmdList { label="B" ,value=9},
-                new CmdList { label="b" ,value=10}
+                new EmbeddedCmds { label="Y", value=1 },
+                new EmbeddedCmds { label="y" ,value=2},
+                new EmbeddedCmds { label="V" ,value=3},
+                new EmbeddedCmds { label="v" ,value=4},
+                new EmbeddedCmds { label="R" ,value=5},
+                new EmbeddedCmds { label="r" ,value=6},
+                new EmbeddedCmds { label="G" ,value=7},
+                new EmbeddedCmds { label="g" ,value=8},
+                new EmbeddedCmds { label="B" ,value=9},
+                new EmbeddedCmds { label="b" ,value=10}
 
             };
             return Ok(commands);

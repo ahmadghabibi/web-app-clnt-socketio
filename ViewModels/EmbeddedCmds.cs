@@ -1,6 +1,6 @@
 ﻿namespace EmbeddedApiDemo.ViewModels
 {
-    public class CmdList
+    public class EmbeddedCmds
     {
         public int value { get; set; }
         public string label { get; set; }
