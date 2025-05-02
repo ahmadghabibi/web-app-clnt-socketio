@@ -8,11 +8,10 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
-app.UseAuthorization();
-
-app.MapControllers();
-
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
+app.UseAuthorization();
+app.MapControllers();
 app.Run();
